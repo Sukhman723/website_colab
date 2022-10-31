@@ -1,9 +1,6 @@
 Resume me thing dont worry about its
 
 
-
-
-
 RoadMap ----------
 
 
