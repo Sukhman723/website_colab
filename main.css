@@ -1,0 +1,54 @@
+/* Some general setting */
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/* Setting header */
+
+header {
+    font-size: 20px;
+    text-align: center;
+}
+
+/* Style the navigation bar */
+nav {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+
+    background-image: url(images/backgrounds/background.png);
+    text-align: center; 
+    line-height: 500%;
+}
+
+.catagories {
+    grid-column: 1;
+    grid-row: 1;
+    justify-self: center;
+}
+
+.socialmedia {
+    grid-column: 2;
+    grid-row: 1;
+
+    display: inline;
+    justify-self: center;
+    position: relative;
+}
+
+
+.catagories li {
+    display: inline;
+    padding-left: 1em;
+}
+.catagories a {
+    color: #0172BA;
+    border:2px solid #0172BA;   
+    padding: 1em;
+    background-color: white;
+    text-decoration: none;
+}
+
+.catagories a:hover {
+    background-color:  #003557;
+}
