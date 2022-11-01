@@ -105,8 +105,7 @@ header {
     overflow: hidden;
     background-color: #f1f1f1;
     padding: 10px;
-}
-header .logo {
+
     color: black;
     text-align: center;
 }
@@ -129,24 +128,24 @@ header a:hover {
 /* nav Setting  */
 
 nav {
-    display: grid;
+    display: grid; /* I made it grid so i can add icons beside the nav  */
     grid-template-columns: 3fr 1fr;
     background: #1A1E23; /* IDK what color  */
 }
 
-ul {
+nav ul {
     grid-row: 1;
     grid-column: 1;
-    display: flex;
+    display: flex; /* This one we can do inline display if u want  */
     flex-direction: row;
     list-style-type: none;
 }
   
-ul li {
-    padding: 5px 20px;
+nav ul li {
+    padding: 5px 20px; /* Some padding so it look better */
 }
   
-ul li a {
+nav ul li a {
     position: relative;
     display: block;
     padding: 4px 0;
@@ -156,8 +155,8 @@ ul li a {
     transition: 0.5s;
 }
 
-ul li a::after {
-    /* Setting Up some animation  */
+nav ul li a::after {
+    /* Setting Up some animation :) */
     position: absolute;
     content: "";
     top: 100%;
@@ -170,11 +169,11 @@ ul li a::after {
     transition: transform 0.5s;
 }
 
-ul li a:hover {
+nav ul li a:hover {
     color: #95a5a6;
 }
 
-ul li a:hover::after {
+nav ul li a:hover::after {
     transform: scaleX(1);
     transform-origin: left;
 }
@@ -221,6 +220,8 @@ main .main_aboutme {
     text-align: center;
 }
 
+
+/* I DONT want to touch this */
 /* Main Flexbox Setting */
 .flex_main {
     display: flex;
@@ -264,7 +265,9 @@ main .main_aboutme {
 }
 
 
+
 /* for the Footer */
+/* Still the same just add border-top notthing new*/
 .footer {
     color: #727272;
     background-color: #f9f9f9;

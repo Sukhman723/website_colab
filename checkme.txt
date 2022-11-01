@@ -3,6 +3,8 @@ Warning i move the main.css out to the root file so that we can add background-i
 background-images: url(images/backgrounds/background.png);
 
 
+btw i dont even using the :root thing on the top its kinda dont need cause i thing it there because they work with multiple website we only need 1 so dont need to use it.
+
 ------------------------------------------------
 CLEANING THEY GONNA BE THE SAME ANYWAY IM JUST MAKE IT MORE CLEAR
 
