@@ -18,7 +18,11 @@ Same with <nav class="nav"> ... </nav>
 
 
 -------------------------
-Change Something here is old code:
+Change The Main first content 
+
+#Add some background images and make a box in the middle 
+
+here is old code:
 html:
       <div class="main_aboutme">
 
@@ -46,22 +50,40 @@ main .main_aboutme .div_h1 {
     font-size: 20px;
 }
 
-Change to:
-CSS:
-.bg-image {
-  /* The image used */
-  background-image: url("photographer.jpg");
+------------------------
 
-  /* Add the blur effect */
-  filter: blur(8px);
-  -webkit-filter: blur(8px);
+Im also changed the Nav hover effect and add icons
 
-  /* Full height */
-  height: 100%;
+Nav old html code:
 
-  /* Center and scale the image nicely */
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
+Nav Old code CSS:
+.nav_container {
+    position: relative;
+    z-index: 2;
+    height: 70px;
+    overflow-y: hidden;
 }
 
+.nav_container nav {
+    display: flex;
+    flex-wrap: nowrap;
+    padding-bottom: 1rem;
+    padding: 10px 10px 20px 10px;
+    margin-top: 0px;
+    overflow-x: auto;
+    text-align: center;
+    white-space: nowrap;
+    justify-content: space-between !important;
+}
+.nav_container nav a {
+    color: #6c757d !important;
+    height: 80.1833px;
+    width: 90px;
+    height: 30px;
+}
+.nav_container nav a:hover {
+    background-color: gray;
+    color: #000 !important;
+    border-radius: 20px;
+    text-decoration: solid;
+}
