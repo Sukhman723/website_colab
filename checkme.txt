@@ -1,0 +1,67 @@
+Warning i move the main.css out to the root file so that we can add background-images or some icon things like this
+
+background-images: url(images/backgrounds/background.png);
+
+
+------------------------------------------------
+CLEANING THEY GONNA BE THE SAME ANYWAY IM JUST MAKE IT MORE CLEAR
+
+The header is great and nav is greate but u create to many class u fuvker
+	Im gonna change:    
+		<header class="header">  ... </header>
+	TO:
+		<header> </header>
+		so in the css file just mention header { some css thing } instead of .header
+
+Same with <nav class="nav"> ... </nav>
+	Because we only need 1 nav so we dont need to make a class for it just use the default one
+
+
+-------------------------
+Change Something here is old code:
+html:
+      <div class="main_aboutme">
+
+        <div class="h1_p">
+          <div class="div_h1"><h1>Sukhmanjeet Singh</h1></div>
+          <p>I'm just checking this site for random things please ignore and go elsewhere such as wikipedia
+            to find some useful content to study thank you very much i appreciate your consideration.</p>
+          </div>
+        </div>
+      </div>
+
+css:
+/* Main Aboutme Setting */
+main .main_aboutme {
+    background-color: RGBA(33,37,41,var(--bs-bg-opacity,1)) !important;
+    color: white;
+    padding: 35px 0 40px 40px;
+    border-radius: 10px;
+    margin-bottom: 30px;
+}
+main .main_aboutme .h1_p {
+    width: 50%;
+}
+main .main_aboutme .div_h1 {
+    font-size: 20px;
+}
+
+Change to:
+CSS:
+.bg-image {
+  /* The image used */
+  background-image: url("photographer.jpg");
+
+  /* Add the blur effect */
+  filter: blur(8px);
+  -webkit-filter: blur(8px);
+
+  /* Full height */
+  height: 100%;
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
