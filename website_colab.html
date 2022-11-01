@@ -1,48 +1,91 @@
 <!DOCTYPE html> 
-<html lang="en"> 
+<html> 
   <head> 
     <meta charset = "UTF-8"> 
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- https://www.w3schools.com/tags/tag_meta.asp -->
-    <title>My Website</title> 
-    <link rel="stylesheet" href="main.css">
-    
+    <!--  Author: My Name, 000123456 --> 
+    <title>My HTML Page</title> 
+    <link rel="stylesheet" href="website_colab_css/main.css">
   </head> 
   
   <body> 
     <!-- creating header -->
-    <header>
-        <p>MY NAME</p>
+    <header class="header">
+      <div class="logo">
+        <a href="#default">Website LOGO</a>
+      </div>
     </header>
-
-    <!-- creating nav -->
-    <nav>
-      <div class="catagories">
-        <li><a href="#Whoami">WhoAmI</a></li>
-        <li><a href="#Project">Project</a></li>
-        <li><a href="#Experience">Experience</a></li>
-        <li><a href="#Volunteer">Volunteer</a></li>
-        <li><a href="#Cert">Cert</a></li>
-        <li><a href="#SKills">SKills</a></li>
-        <li><a href="#Education">Education</a></li>
-      </div>
-
-      <div class="socialmedia">
-        <a href="#facebook"><img src="images/icons/facebook-64.png" alt="facebook"> </a>
-        <a href="#linkedin"><img src="images/icons/linkedin-64.png" alt="linkedin"> </a>
-        <a href="#youtube"><img src="images/icons/youtube-64.png" alt="youtube"> </a>
-        <a href="#gmail"><img src="images/icons/gmail-64.png" alt="gmail"> </a>
-      </div>
-    </nav>
-
-
-
-    <h1>Your Name COMP CO710 Page</h1> 
+    <!--creating nav links-->
+    <div class="nav_links">
+      <nav class="nav">
+        <a class="home" href="#">Home</a>
+        <a class="whoami" href="#">Who am i</a>
+        <a class="contactus" href="#">Contact Us</a>
+        <a class="contactus" href="#">checking</a>
+        <a class="blog_header_link_r" href="#">whatever</a>
+        <a class="blog_header_link_r" href="#">Contact Us</a>
+        <a class="blog_header_link_r" href="#">Contact Us</a>
+        <a class="blog_header_link_r" href="#">Contact Us</a>
+      </nav>
+    </div>
     
-    <p> 
-      This page is created to test the development environment.  
-      Testing the text editor and the Web browser. 
-    </p> 
-  
+    <main class="main">
+      <!--creating main body such as Sukhmanjeet singh paragraph-->
+      <div class="main_div">
+        <div class="h1_p">
+          <div class="div_h1"><h1>Sukhmanjeet Singh</h1></div>
+          <div class="div_p"><p>I'm just checking this site for random things please ignore and go elsewhere such as wikipedia
+            to find some useful content to study thank you very much i appreciate your consideration.
+          </p></div>
+        </div>
+      </div>
+      <!-- creating flex boxes -->
+      <div class="flex_main">
+        <div class="left">
+            <!-- left_l just to say to follow row wise -->
+            <div class="left_l">
+              <div class="strong_h3_p">
+                <strong class="One">One</strong>
+                <h3 class="h3">Heading3</h3>
+                <p class="p">this is just the random text i want to generate here so please kindly ignore</p>
+              </div>
+              <!-- thumbnail to the right -->
+              <div class="thumbnail">
+              <!-- I copied this thing from different site so don't delete yet. it is a placeholder -->
+                <svg class="bd-placeholder-img" width="200" height="250" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false">
+                  <title>Placeholder</title>
+                  <rect width="100%" height="100%" fill="#55595c"></rect>
+                  <text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text>
+                </svg>
+              </div>
+            </div>
+          </div>
+        <!-- 2nd flex box -- change this code later one Min ignore below code -->
+        <div class="right">
+          <!-- left_l just to say to follow row wise -->
+          <div class="right_l">
+            <div class="strong_h3_p">
+              <strong class="two">One</strong>
+              <h3 class="h3">Heading3</h3>
+              <p class="p">this is just the random text i want to generate here so please kindly ignore</p>
+            </div>
+            <!-- thumbnail to the right -->
+            <div class="thumbnail">
+            <!-- I copied this thing from different site so don't delete yet. it is a placeholder -->
+              <svg class="bd-placeholder-img" width="200" height="250" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false">
+                <title>Placeholder</title>
+                <rect width="100%" height="100%" fill="#55595c"></rect>
+                <text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text>
+              </svg>
+            </div>
+          </div>
+        </div>
+      </div>
+      </div>
+    </main>
+
+    <footer class="footer">
+      <p>Testing</p>
+      <p>this is just some random text</p>
+    </footer>
   </body> 
 </html>
