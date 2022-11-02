@@ -1,0 +1,91 @@
+Warning i move the main.css out to the root file so that we can add background-images or some icon things like this
+
+background-images: url(images/backgrounds/background.png);
+
+
+btw i dont even using the :root thing on the top its kinda dont need cause i thing it there because they work with multiple website we only need 1 so dont need to use it.
+
+------------------------------------------------
+CLEANING THEY GONNA BE THE SAME ANYWAY IM JUST MAKE IT MORE CLEAR
+
+The header is great and nav is greate but u create to many class u fuvker
+	Im gonna change:    
+		<header class="header">  ... </header>
+	TO:
+		<header> </header>
+		so in the css file just mention header { some css thing } instead of .header
+
+Same with <nav class="nav"> ... </nav>
+	Because we only need 1 nav so we dont need to make a class for it just use the default one
+
+
+-------------------------
+Change The Main first content 
+
+#Add some background images and make a box in the middle 
+
+here is old code:
+html:
+      <div class="main_aboutme">
+
+        <div class="h1_p">
+          <div class="div_h1"><h1>Sukhmanjeet Singh</h1></div>
+          <p>I'm just checking this site for random things please ignore and go elsewhere such as wikipedia
+            to find some useful content to study thank you very much i appreciate your consideration.</p>
+          </div>
+        </div>
+      </div>
+
+css:
+/* Main Aboutme Setting */
+main .main_aboutme {
+    background-color: RGBA(33,37,41,var(--bs-bg-opacity,1)) !important;
+    color: white;
+    padding: 35px 0 40px 40px;
+    border-radius: 10px;
+    margin-bottom: 30px;
+}
+main .main_aboutme .h1_p {
+    width: 50%;
+}
+main .main_aboutme .div_h1 {
+    font-size: 20px;
+}
+
+------------------------
+
+Im also changed the Nav hover effect and add icons
+
+Nav old html code:
+
+Nav Old code CSS:
+.nav_container {
+    position: relative;
+    z-index: 2;
+    height: 70px;
+    overflow-y: hidden;
+}
+
+.nav_container nav {
+    display: flex;
+    flex-wrap: nowrap;
+    padding-bottom: 1rem;
+    padding: 10px 10px 20px 10px;
+    margin-top: 0px;
+    overflow-x: auto;
+    text-align: center;
+    white-space: nowrap;
+    justify-content: space-between !important;
+}
+.nav_container nav a {
+    color: #6c757d !important;
+    height: 80.1833px;
+    width: 90px;
+    height: 30px;
+}
+.nav_container nav a:hover {
+    background-color: gray;
+    color: #000 !important;
+    border-radius: 20px;
+    text-decoration: solid;
+}
